@@ -7,8 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.google.gson.Gson;
-
 import model.Fruit;
 import model.FruitDB;
 
@@ -39,8 +37,7 @@ public class FruitServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		// response.getWriter().append("Served at: ").append(request.getContextPath()).append(" java version ").append(System.getProperty("java.version"));
-		response.getWriter().append(new Gson().toJson(FruitDB.getFruits()));
+		response.getWriter().append("Served at: ").append(request.getContextPath()).append(" java version ").append(System.getProperty("java.version"));
 	}
 
 	/**
