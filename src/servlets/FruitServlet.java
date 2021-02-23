@@ -24,14 +24,6 @@ public class FruitServlet extends HttpServlet {
 		FruitDB.insertFruit(new Fruit("pear", "green"));
 	}
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public FruitServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
